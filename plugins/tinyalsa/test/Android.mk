@@ -22,6 +22,11 @@ LOCAL_C_INCLUDES += $(TOP)/vendor/qcom/opensource/tinyalsa/include
 LOCAL_SHARED_LIBRARIES += libqti-tinyalsa
 else
 LOCAL_SHARED_LIBRARIES += libtinyalsa
+LOCAL_C_INCLUDES += \
+    $(call project-path-for,qcom-audio)/agm_ipc_client/inc \
+    $(call project-path-for,qcom-audio)/agm/ipc/HwBinders/agm_ipc_service/inc/ \
+    $(call project-path-for,qcom-audio)/pal/ipc/HwBinders/pal_ipc_server/inc/ \
+    $(call project-path-for,qcom-audio)/pal/session/inc/
 endif
 
 
@@ -55,6 +60,11 @@ LOCAL_C_INCLUDES += $(TOP)/vendor/qcom/opensource/tinyalsa/include
 LOCAL_SHARED_LIBRARIES += libqti-tinyalsa
 else
 LOCAL_SHARED_LIBRARIES += libtinyalsa
+LOCAL_C_INCLUDES += \
+    $(call project-path-for,qcom-audio)/agm_ipc_client/inc \
+    $(call project-path-for,qcom-audio)/agm/ipc/HwBinders/agm_ipc_service/inc/ \
+    $(call project-path-for,qcom-audio)/pal/ipc/HwBinders/pal_ipc_server/inc/ \
+    $(call project-path-for,qcom-audio)/pal/session/inc/
 endif
 
 LOCAL_SHARED_LIBRARIES += \
@@ -85,6 +95,11 @@ LOCAL_C_INCLUDES += $(TOP)/vendor/qcom/opensource/tinyalsa/include
 LOCAL_SHARED_LIBRARIES += libqti-tinyalsa
 else
 LOCAL_SHARED_LIBRARIES += libtinyalsa
+LOCAL_C_INCLUDES += \
+    $(call project-path-for,qcom-audio)/agm_ipc_client/inc \
+    $(call project-path-for,qcom-audio)/agm/ipc/HwBinders/agm_ipc_service/inc/ \
+    $(call project-path-for,qcom-audio)/pal/ipc/HwBinders/pal_ipc_server/inc/ \
+    $(call project-path-for,qcom-audio)/pal/session/inc/
 endif
 
 LOCAL_SHARED_LIBRARIES += \
@@ -116,6 +131,11 @@ LOCAL_C_INCLUDES += $(TOP)/vendor/qcom/opensource/tinyalsa/include
 LOCAL_SHARED_LIBRARIES += libqti-tinyalsa
 else
 LOCAL_SHARED_LIBRARIES += libtinyalsa
+LOCAL_C_INCLUDES += \
+    $(call project-path-for,qcom-audio)/agm_ipc_client/inc \
+    $(call project-path-for,qcom-audio)/agm/ipc/HwBinders/agm_ipc_service/inc/ \
+    $(call project-path-for,qcom-audio)/pal/ipc/HwBinders/pal_ipc_server/inc/ \
+    $(call project-path-for,qcom-audio)/pal/session/inc/
 endif
 
 LOCAL_SHARED_LIBRARIES += \
@@ -152,7 +172,12 @@ LOCAL_C_INCLUDES += $(TOP)/vendor/qcom/opensource/tinycompress/include
 LOCAL_SHARED_LIBRARIES += libqti-tinyalsa\
                           libqti-tinycompress
 else
-LOCAL_C_INCLUDES += $(TOP)/external/tinycompress/include
+LOCAL_C_INCLUDES += \
+    $(TOP)/external/tinycompress/include \
+    $(call project-path-for,qcom-audio)/agm_ipc_client/inc \
+    $(call project-path-for,qcom-audio)/agm/ipc/HwBinders/agm_ipc_service/inc/ \
+    $(call project-path-for,qcom-audio)/pal/ipc/HwBinders/pal_ipc_server/inc/ \
+    $(call project-path-for,qcom-audio)/pal/session/inc/
 LOCAL_SHARED_LIBRARIES += libtinyalsa\
                           libtinycompress
 endif
@@ -191,7 +216,12 @@ LOCAL_C_INCLUDES += $(TOP)/vendor/qcom/opensource/tinycompress/include
 LOCAL_SHARED_LIBRARIES += libqti-tinyalsa\
                           libqti-tinycompress
 else
-LOCAL_C_INCLUDES += $(TOP)/external/tinycompress/include
+LOCAL_C_INCLUDES += \
+    $(TOP)/external/tinycompress/include \
+    $(call project-path-for,qcom-audio)/agm_ipc_client/inc \
+    $(call project-path-for,qcom-audio)/agm/ipc/HwBinders/agm_ipc_service/inc/ \
+    $(call project-path-for,qcom-audio)/pal/ipc/HwBinders/pal_ipc_server/inc/ \
+    $(call project-path-for,qcom-audio)/pal/session/inc/
 LOCAL_SHARED_LIBRARIES += libtinyalsa\
                           libtinycompress
 endif
@@ -226,6 +256,11 @@ LOCAL_C_INCLUDES += $(TOP)/vendor/qcom/opensource/tinyalsa/include
 LOCAL_SHARED_LIBRARIES += libqti-tinyalsa
 else
 LOCAL_SHARED_LIBRARIES += libtinyalsa
+LOCAL_C_INCLUDES += \
+    $(call project-path-for,qcom-audio)/agm_ipc_client/inc \
+    $(call project-path-for,qcom-audio)/agm/ipc/HwBinders/agm_ipc_service/inc/ \
+    $(call project-path-for,qcom-audio)/pal/ipc/HwBinders/pal_ipc_server/inc/ \
+    $(call project-path-for,qcom-audio)/pal/session/inc/
 endif
 
 LOCAL_SHARED_LIBRARIES += \
